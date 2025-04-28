@@ -30,6 +30,6 @@ df = pd.read_sql('SELECT * FROM orders', mysql_engine)
 # Write DataFrame to orders table in postgres
 df.to_sql('orders', pg_engine, schema = 'raw', if_exists='replace', index=False)
 # %%
-print(f'{len(df)} records loaded into postgres data_engineer_project table')
+print(f'{len(df)} records loaded into postgres orders table')
 # %%
 df
