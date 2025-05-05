@@ -1,0 +1,13 @@
+name: 'basket_craft_dbt'
+version: '1.0'
+
+profile: 'basket_craft_dbt'
+
+config-version: 2
+
+models:
+  basket_craft_dbt:
+    staging:
+      materialized: view
+    warehouse:
+      materialized: table
