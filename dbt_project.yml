@@ -1,4 +1,4 @@
-name: 'basket_craft_dbt'
+name: 'basket_craft_data_pipeline'
 version: '1.0'
 
 profile: 'basket_craft_dbt'
