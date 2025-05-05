@@ -33,7 +33,7 @@ WHERE created_at BETWEEN '2023-12-01' AND '2023-12-31 23:59:59'
 """
 
 # %%
-df = pd.read_sql('SELECT * FROM website_sessions', mysql_engine)
+df = pd.read_sql(query, mysql_engine)
 
 
 # %%
