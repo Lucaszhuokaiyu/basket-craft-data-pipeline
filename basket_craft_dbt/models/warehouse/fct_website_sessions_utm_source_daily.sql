@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 SELECT
     DATE(website_session_created_at) AS website_session_day,
     utm_source,
