@@ -19,16 +19,16 @@ env:
   PG_HOST:       ${{ secrets.PG_HOST }}
   PG_DB:         ${{ secrets.PG_DB }}
 
-    steps:
-    - uses: actions/checkout@v3
+steps:
+  - uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+  - name: Set up Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.10'
 
-    - name: Install dependencies
-      run: pip install pandas SQLAlchemy pymysql psycopg2-binary
+  - name: Install dependencies
+    run: pip install pandas SQLAlchemy pymysql psycopg2-binary
 
-    - name: Run ETL script
-      run: python elt/basket_craft_website_sessions_extract_load_raw.py
+  - name: Run ETL script
+    run: python elt/basket_craft_website_sessions_extract_load_raw.py
