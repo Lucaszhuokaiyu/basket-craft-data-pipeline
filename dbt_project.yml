@@ -6,13 +6,9 @@ profile: 'basket_craft_dbt'
 config-version: 2
 
 models:
-  basket_craft:
+  basket_craft_dbt:
     staging:
-      +schema: staging
-      +materialized: view
+      materialized: view
     warehouse:
-      +schema: warehouse
-      +materialized: table
-    marts:
-      +schema: marts
-      +materialized: table
+      materialized: table
+
